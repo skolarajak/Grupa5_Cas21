@@ -6,6 +6,17 @@ namespace Cas21
     {
         static void Main(string[] args)
         {
+            Cas_Deo1();
+            Console.ReadKey();
+        }
+
+        /*
+         * Prvi deo casa, nullables, i null coalescing operator
+         * Ternary operator
+         *
+         */
+        static void Cas_Deo1()
+        {
             double? num1 = null;
             double? num2 = 3.14159;
             double? numR;
@@ -17,7 +28,8 @@ namespace Cas21
             if (num1 == null)
             {
                 numR = num2;
-            } else
+            }
+            else
             {
                 numR = num1;
             }
@@ -26,7 +38,6 @@ namespace Cas21
             numR = (num1 < 10) ? 10 : num1;
 
             Console.WriteLine("Value of numR is {0}", numR);
-            Console.ReadKey();
         }
     }
 }
